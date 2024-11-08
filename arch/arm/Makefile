@@ -296,10 +296,10 @@ dtbs: $(DRVGEN_FILE_LIST)
 
 boot := arch/arm/boot
 
-archprepare:
-	$(Q)$(MAKE) $(build)=arch/arm/tools include/generated/mach-types.h
--include $(srctree)/scripts/ptgen/$(MTK_PLATFORM)/ptgen.mk
--include $(srctree)/scripts/ptgen/$(MTK_PLATFORM)/ptgen.mk
+#archprepare:
+#	$(Q)$(MAKE) $(build)=arch/arm/tools include/generated/mach-types.h
+#-include $(srctree)/scripts/ptgen/$(MTK_PLATFORM)/ptgen.mk
+#-include $(srctree)/scripts/ptgen/$(MTK_PLATFORM)/ptgen.mk
 # Convert bzImage to zImage
 bzImage: zImage
 
